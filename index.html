@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Veggie Vanquisher</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Import libraries directly from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.162.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/dist/cannon-es.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nipplejs@0.10.1/dist/nipplejs.min.js"></script>
+</head>
+<body>
+    <div id="ui-overlay">
+        <div id="score">Score: 0</div>
+        <div id="ammo">Carrot: 10 | Damage: 10</div>
+    </div>
+    
+    <div id="weapon-select">
+        <button class="weapon-btn active" data-weapon="0">🥕</button>
+        <button class="weapon-btn" data-weapon="1">🍅</button>
+        <button class="weapon-btn" data-weapon="2">🥬</button>
+    </div>
+    
+    <div id="mobile-controls">
+        <div id="mobile-joystick">
+            <div id="joystick-knob"></div>
+        </div>
+    </div>
+    <button id="mobile-shoot">🎯</button>
+    
+    <div id="game-over">
+        <h2>GAME OVER</h2>
+        <p>Final Score: <span id="final-score">0</span></p>
+        <button id="restart-btn">Play Again</button>
+    </div>
+
+    <!-- Game scripts -->
+    <script src="js/particles.js"></script>
+    <script src="js/mobileControls.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html> 
